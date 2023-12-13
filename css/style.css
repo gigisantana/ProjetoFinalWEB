@@ -1,0 +1,27 @@
+* {
+    font-size: 16px;
+  }
+  header {
+    height: 10vh;
+  }
+
+form{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+form input{
+    padding: 5px;
+    border: none;
+}
+form button{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+div.lista{
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+}
