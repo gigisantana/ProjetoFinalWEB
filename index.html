@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
@@ -10,14 +10,13 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    </script>
-    <title>Pokémon Seletor!</title>
+    <title>Pokedéx!</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#">Pokedéx</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -52,7 +51,7 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Formar time</a>
+                    <a class="nav-link" href="./registro.html">Registrar</a>
                   </li>
                 </ul>
               </div>
@@ -61,12 +60,10 @@
     </header>
     <main>
         <h1>Pesquise o pokémon: </h1>
+        <input type="text" id="pokemonInput" placeholder="Digite o nome do Pokémon">
+        <button onclick="searchPokemon()">Pesquisar</button>
+        <div id="pokemonDetails"></div>
     </main>
-    <section>
-        <form action="">
-
-        </form>
-    </section>
     <footer>
 
     </footer>

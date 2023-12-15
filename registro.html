@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Registrar na Pokedéx</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Pokedéx</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Pesquisar</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Lista
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Aço</a></li>
+                      <li><a class="dropdown-item" href="#">Água</a></li>
+                      <li><a class="dropdown-item" href="#">Dragão</a></li>
+                      <li><a class="dropdown-item" href="#">Elétrico</a></li>
+                      <li><a class="dropdown-item" href="#">Fada</a></li>
+                      <li><a class="dropdown-item" href="#">Fantasma</a></li>
+                      <li><a class="dropdown-item" href="#">Fogo</a></li>
+                      <li><a class="dropdown-item" href="#">Gelo</a></li>
+                      <li><a class="dropdown-item" href="#">Inseto</a></li>
+                      <li><a class="dropdown-item" href="#">Lutador</a></li>
+                      <li><a class="dropdown-item" href="#">Normal</a></li>
+                      <li><a class="dropdown-item" href="#">Pedra</a></li>
+                      <li><a class="dropdown-item" href="#">Planta</a></li>
+                      <li><a class="dropdown-item" href="#">Psíquico</a></li>
+                      <li><a class="dropdown-item" href="#">Sombrio</a></li>
+                      <li><a class="dropdown-item" href="#">Terra</a></li>
+                      <li><a class="dropdown-item" href="#">Venenoso</a></li>
+                      <li><a class="dropdown-item" href="#">Voador</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./registro.html">Registrar</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div class="container">
+            <h1>Registro de Pokémon</h1>
+            <form id="pokemonForm">
+                <label for="pokemonInput">Nome do Pokémon:</label>
+                <input type="text" id="nomeInput" placeholder="Digite o nome do Pokémon" required>
+            
+                <label for="tipoCheckbox">Tipos:</label>
+                <div id="typeCheckbox">
+                    <input type="checkbox" id="tipoAco" name="type" value="aco">
+                    <label for="tipoAco">Aço</label>
+                    
+                    <input type="checkbox" id="tipoAgua" name="type" value="água">
+                    <label for="tipoAgua">Água</label>
+                    
+                    <input type="checkbox" id="tipoDragao" name="type" value="dragão">
+                    <label for="tipoDragao">Dragão</label>
+                    
+                    <input type="checkbox" id="tipoEletrico" name="type" value="eletrico">
+                    <label for="tipoEletrico">Elétrico</label>
+
+                    <input type="checkbox" id="tipoFada" name="typo" value="fada">
+                    <label for="tipoFada">Fada</label>
+
+                    <input type="checkbox" id="tipoFantasma" name="type" value="fantasma">
+                    <label for="tipoFantasma">Fantasma</label>
+
+                    <input type="checkbox" id="tipoFogo" name="type" value="fogo">
+                    <label for="fireType">Fogo</label>
+
+                    <input type="checkbox" id="tipoGelo" name="tipo" value="gelo">
+                    <label for="tipoGelo">Gelo</label>
+
+                    <input type="checkbox" id="tipoInseto" name="tipo" value="inseto">
+                    <label for="tipoInseto">Inseto</label>
+
+                    <input type="checkbox" id="tipoLutador" name="tipo" value="lutador">
+                    <label for="tipoLutador">Lutador</label>
+
+                    <input type="checkbox" id="tipoNormal" name="type" value="normal">
+                    <label for="tipoNormal">Normal</label>
+
+                    <input type="checkbox" id="tipoPedra" name="tipo" value="pedra">
+                    <label for="tipoPedra">Pedra</label>
+
+                    <input type="checkbox" id="tipoPlanta" name="tipo" value="planta">
+                    <label for="tipoPlanta">Planta</label>
+
+                    <input type="checkbox" id="tipoPsiquico" name="tipo" value="psiquico">
+                    <label for="tipoPsiquico">Psíquico</label>
+
+                    <input type="checkbox" id="tipoSombrio" name="tipo" value="sombrio">
+                    <label for="tipoSombrio">Sombrio</label>
+
+                    <input type="checkbox" id="tipoTerra" name="tipo" value="terra">
+                    <label for="tipoTerra">Terra</label>
+
+                    <input type="checkbox" id="tipoVenenoso" name="tipo" value="venenoso">
+                    <label for="tipoVenenoso">Venenoso</label>
+
+                    <input type="checkbox" id="tipoVoador" name="tipo" value="voador">
+                    <label for="tipoVoador">Voador</label>
+                </div>
+            
+                <label for="dateInput">Data do Encontro:</label>
+                <input type="date" id="dataInput" required>
+            
+                <label for="cpInput">Ponto de Combate (CP):</label>
+                <input type="number" id="pcInput" placeholder="Digite o CP do Pokémon" required>
+            
+                <button type="button" onclick="registroPokemon()">Registrar Pokémon</button>
+        </form>
+        <div id="pokemonDetails"></div>
+        </div>
+    </section>
+    <script src="./js/registro.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+</body>
