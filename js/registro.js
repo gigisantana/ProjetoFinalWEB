@@ -24,18 +24,23 @@
 function registroPokemon() {
     const form = document.getElementById('pokemonForm');
     const nome = form.elements['nomeInput'].value.toLowerCase();
-    const tipo = form.elements['tipoInput'].value;
     const dataRegistro = form.elements['dataInput'].value;
     const pc = form.elements['pcInput'].value;
 
-    if (nome && tipo && dataRegistro && pc) {
-        const pokemonData = {
-            nome: nome,
-            tipo: tipo,
-            data_registro: dataRegistro,
-            pc: pc,
-        };
-
+    if (nome && dataRegistro && pc) {
+      const selectedTypes = [];
+      const typeCheckboxes = form.elements['type'];
+      for (const checkbox of typeCheckboxes) {
+          if (checkbox.checked) {
+              selectedTypes.push(checkbox.value);
+          }
+      }
+      const pokemonData = {
+        nome: nomePokemon,
+        types: selectedTypes,
+        data_Registro: dataRegistro,
+        pc: pc,
+    };
 
         console.log('Pokémon registrado:', pokemonData);
         alert('Registrado com sucesso!');

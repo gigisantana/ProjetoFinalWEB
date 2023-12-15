@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="./index.html">Pokedéx</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,68 +58,87 @@
             </div>
           </nav>
     </header>
-    <section>
-        <div class="container">
+    <section class="">
+        <div class="container mx-auto w-60 justify-content-center align-items-center">
             <h1>Registro de Pokémon</h1>
             <form id="pokemonForm">
                 <label for="pokemonInput">Nome do Pokémon:</label>
                 <input type="text" id="nomeInput" placeholder="Digite o nome do Pokémon" required>
             
                 <label for="tipoCheckbox">Tipos:</label>
-                <div id="typeCheckbox">
+                <div id="tipoCheckbox" class="row">
+                  <div class="col-md-3 mb-2">
                     <input type="checkbox" id="tipoAco" name="type" value="aco">
                     <label for="tipoAco">Aço</label>
-                    
+                  </div>
+                  <div class="col-md-3 mb-1">
                     <input type="checkbox" id="tipoAgua" name="type" value="água">
                     <label for="tipoAgua">Água</label>
-                    
+                  </div>
+                  <div class="col-md-3 mb-2">
                     <input type="checkbox" id="tipoDragao" name="type" value="dragão">
                     <label for="tipoDragao">Dragão</label>
-                    
-                    <input type="checkbox" id="tipoEletrico" name="type" value="eletrico">
-                    <label for="tipoEletrico">Elétrico</label>
-
-                    <input type="checkbox" id="tipoFada" name="typo" value="fada">
-                    <label for="tipoFada">Fada</label>
-
+                  </div>
+                  <div class="col-md-3 mb-2">
+                      <input type="checkbox" id="tipoEletrico" name="type" value="eletrico">
+                      <label for="tipoEletrico">Elétrico</label>
+                  </div>
+                  <div class="col-md-3 mb-2">
+                      <input type="checkbox" id="tipoFada" name="typo" value="fada">
+                      <label for="tipoFada">Fada</label>
+                  </div>
+                  <div class="col-md-3 mb-2">
                     <input type="checkbox" id="tipoFantasma" name="type" value="fantasma">
                     <label for="tipoFantasma">Fantasma</label>
-
+                  </div>
+                  <div class="col-md-3 mb-2">
                     <input type="checkbox" id="tipoFogo" name="type" value="fogo">
                     <label for="fireType">Fogo</label>
-
+                  </div>
+                  <div class="col-md-3 mb-2">
                     <input type="checkbox" id="tipoGelo" name="tipo" value="gelo">
                     <label for="tipoGelo">Gelo</label>
-
+                  </div>
+                  <div class="col-md-3 mb-2">
                     <input type="checkbox" id="tipoInseto" name="tipo" value="inseto">
                     <label for="tipoInseto">Inseto</label>
-
+                  </div>
+                  <div class="col-md-3 mb-2">
                     <input type="checkbox" id="tipoLutador" name="tipo" value="lutador">
                     <label for="tipoLutador">Lutador</label>
-
+                  </div>
+                  <div class="col-md-3 mb-2">
                     <input type="checkbox" id="tipoNormal" name="type" value="normal">
                     <label for="tipoNormal">Normal</label>
-
+                  </div>
+                  <div class="col-md-3 mb-2">
                     <input type="checkbox" id="tipoPedra" name="tipo" value="pedra">
                     <label for="tipoPedra">Pedra</label>
-
+                  </div>
+                  <div class="col-md-3 mb-2">
                     <input type="checkbox" id="tipoPlanta" name="tipo" value="planta">
                     <label for="tipoPlanta">Planta</label>
-
+                  </div>
+                  <div class="col-md-3 mb-2">
                     <input type="checkbox" id="tipoPsiquico" name="tipo" value="psiquico">
                     <label for="tipoPsiquico">Psíquico</label>
-
+                  </div>
+                  <div class="col-md-3 mb-2">
                     <input type="checkbox" id="tipoSombrio" name="tipo" value="sombrio">
                     <label for="tipoSombrio">Sombrio</label>
-
+                  </div>
+                  <div class="col-md-3 mb-2">
                     <input type="checkbox" id="tipoTerra" name="tipo" value="terra">
                     <label for="tipoTerra">Terra</label>
-
+                  </div>
+                  <div class="col-md-3 mb-2">
                     <input type="checkbox" id="tipoVenenoso" name="tipo" value="venenoso">
                     <label for="tipoVenenoso">Venenoso</label>
-
+                  </div>
+                  <div class="col-md-3 mb-2">
                     <input type="checkbox" id="tipoVoador" name="tipo" value="voador">
                     <label for="tipoVoador">Voador</label>
+                  </div>
                 </div>
             
                 <label for="dateInput">Data do Encontro:</label>
